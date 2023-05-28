@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Cadastro | GN</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+    color: #fff
+}
+
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    width: 60px;
+    
+}
+
+.logo h1 {
+    color: #ffff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #ffff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    background-color: #B22222;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+}
+ 
+
+
+body{
+
+ font-family: Arial, Helvetica, sans-serif;
+
+background-image: url(/img/vermelho.png)
+
+ }
+
+ .box{
+
+color: rgb(255, 255, 255);
+
+ position: absolute;
+
+ top:50%;
+
+ left: 50%;
+
+ transform: translate(-50%,-50%);
+
+ background-color: rgba(0, 0, 0, 0.9);
+
+ padding: 20px;
+ border-radius: 20px;
+
+ width: 30%;
+
+
+
+ }
+
+ fieldset{
+
+ border: 3px solid rgb(141, 0, 0)
+
+ }
+
+ legend{
+
+ border: 1px solid rgb(141, 0, 0);
+
+ padding: 10px;
+
+ text-align: center;
+
+ background-color: rgb(141, 0, 0);
+
+ border-radius: 8px;
+
+ }
+
+ .inputBox{
+
+ position: relative;
+
+ }
+
+ .inputUser{
+
+ background:none;
+
+border: none;
+
+ border-bottom: 1px solid white;
+
+ outline: none;
+
+ color: white;
+
+font-size: 15px;
+
+ width: 100%;
+
+ letter-spacing: 2px;
+
+}
+
+ .LabelInput{
+
+position: absolute;
+
+ top: 0px;
+
+ left: 0px;
+
+pointer-events: none;
+
+ transition: .5s;
+
+ }
+
+ .inputUser:focus ~ .LabelInput,
+
+ .inputUser:valid ~ .LabelInput{
+
+ top: -20px;
+ font-size: 12px;
+
+ color: rgb(58, 226, 43);
+
+ }
+
+ #data_nascimento{
+border: none;
+
+ padding: 8px;
+
+border-radius: 10px;
+
+outline: none;
+
+font-size: 12px;
+
+cursor: pointer;
+ }
+
+#submit{
+
+ background-color: rgb(90, 11, 11);
+width: 30%;
+
+ padding: 10px;
+
+ border-radius: 15px;
+
+ border: none;
+ color: white;
+ font-size: 15px;
+ cursor: pointer;
+
+ }
+
+ #submit:hover{
+background-color: rgb(215, 2, 2);
+
+
+
+
+ }
+
+
+ 
+ </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                <img height= "55px" src="img/logo.png">
+                </a>
+          </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="suite2.html" class="nav-link">Suítes</a></li>
+                    <li class="nav-item"><a href="cadastro.html" class="nav-link">Reserva</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Quem nós somos?</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                 <button><a href="#">Entrar</a></button>
+            </div>
+        </nav>
+    </header>    
+
+
+<div class="box">
+
+ <form action="">
+
+ <legend><b>Faça seu cadastro</b></legend> <br><br>
+ <div class="inputBox">
+<input type="text" name="nome" id="nome" class="inputUser" required>
+
+ <label for="nome" class="LabelInput">Nome Completo</label> <br><br>
+</div>
+
+ <br>
+
+
+
+ <div class="inputBox">
+
+ <input type="text" name="email" id="email" class="inputUser" required>
+ <label for="nome" class="LabelInput">E-mail</label> <br><br>
+ </div>
+ <br>
+
+
+
+<div class="inputBox">
+
+ <input type="tel" name="Telefone" id="Telefone" class="inputUser" required>
+ <label for="nome" class="LabelInput">Telefone</label> <br><br><br>
+
+
+
+ <div class="inputBox">
+ <input type="password" name="Senha" id="Senha" class="inputUser" required>
+
+ <br><br><label for="nome" class="LabelInput">Senha</label><br><br>
+
+
+
+
+
+
+ <p>Sexo:</p> <br><br>
+
+ <input type="radio" id="feminino" name="genêro" value="feminino" required>
+
+ <label for="feminino">Feminino</label>
+
+                    <br>
+
+
+
+
+                    <input type="radio" id="masculino" name="genêro" value="masculino" required>
+
+                    <label for="masculino">Masculino</label>
+
+                    <br>
+
+
+
+
+                    <input type="radio" id="Outro" name="genêro" value="Outro" required>
+
+                    <label for="Outro">Outro</label>
+
+                    <br>
+
+                    <br>
+
+
+
+
+                        <label for="data_nascimento"><b>Data de Nascimento</b></label>
+
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+                    </div>
+
+                    <br>
+
+
+
+
+                    <div class="inputBox">
+
+                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+
+                        <label for="cidade" class="LabelInput">Cidade</label>
+
+                    </div>
+
+                    <br>
+
+
+
+
+                    <div class="inputBox">
+
+                        <input type="text" name="estado" id="estado" class="inputUser" required>
+
+                        <label for="estado" class="LabelInput">Estado</label>
+
+                    </div>
+
+                    <br>
+
+
+
+
+                    <div class="inputBox">
+
+                        <input type="text" name="endereço" id="endereço" class="inputUser" required>
+
+                        <label for="endereço" class="LabelInput">Endereço</label>
+
+                    </div>
+
+                    <br>
+
+
+
+
+                    <input type="submit"  name="submit" id="submit" a href="suite2.html">
+
+                    <br>
+
+                    <br>
+
+
+
+
+
+
+
+               
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+
+
+    
+
+</body>
+
+</html>
